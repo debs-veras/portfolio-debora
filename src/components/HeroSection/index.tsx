@@ -55,10 +55,17 @@ const fadeLeft = (delay: number) => ({
 /* ─── Data ─── */
 
 const socialLinks = [
-  { Icon: IconBrandGithub, href: 'https://github.com/', label: 'GitHub' },
-  { Icon: IconBrandLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { Icon: IconBrandTwitter, href: 'https://twitter.com/', label: 'Twitter' },
-  { Icon: IconMail, href: 'mailto:contato@debora.dev', label: 'Email' },
+  {
+    Icon: IconBrandGithub,
+    href: 'https://github.com/debs-veras',
+    label: 'GitHub',
+  },
+  {
+    Icon: IconBrandLinkedin,
+    href: 'https://www.linkedin.com/in/debora-hellen-711955194',
+    label: 'LinkedIn',
+  },
+  { Icon: IconMail, href: 'mailto:deborahellenvp@gmail.com', label: 'Email' },
 ];
 
 const techs = [
@@ -90,7 +97,10 @@ function CodeSnippetCard() {
       <div className="space-y-0.5 font-mono text-[9px] leading-[18px] xl:text-[10px]">
         <p>
           <span className="text-purple-600 dark:text-purple-400">const</span>
-          <span className="text-blue-600 dark:text-blue-300"> Debora</span>
+          <span className="text-blue-600 dark:text-blue-300">
+            {' '}
+            DeboraHellen
+          </span>
           <span className="text-neutral-700 dark:text-white/80">
             {' '}
             = () =&gt; {'{'}
@@ -331,16 +341,17 @@ export default function HeroSection() {
                   whileTap={{ scale: 0.96 }}
                   className="flex cursor-pointer items-center gap-2 rounded-full bg-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-purple-600/30 transition hover:bg-purple-500 sm:px-6 sm:py-3"
                 >
-                  View Projects <IconArrowRight size={16} />
+                  Ver Projetos <IconArrowRight size={16} />
                 </motion.a>
                 <motion.a
-                  href="/cv.pdf"
-                  download
+                  href="https://drive.google.com/file/d/1WGQuOrh_K005q2CBl3Ip7e9Da5JSQ3om/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.96 }}
                   className="flex cursor-pointer items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-semibold text-foreground transition hover:bg-white/10 sm:px-6 sm:py-3"
                 >
-                  Download CV <IconDownload size={16} />
+                  Ver Currículo <IconDownload size={16} />
                 </motion.a>
               </motion.div>
 

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { IconMail, IconBrandLinkedin, IconBrandGithub, IconMapPin } from '@tabler/icons-react';
+import { IconMail, IconBrandLinkedin, IconBrandGithub, IconMapPin, IconBrandWhatsapp } from '@tabler/icons-react';
 
 export default function ContactSection() {
   return (
@@ -23,13 +23,23 @@ export default function ContactSection() {
             </div>
 
             <div className="space-y-6">
-              <a href="mailto:contato@debora.dev" className="flex items-center gap-4 text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              <a href="mailto:deborahellenvp@gmail.com" className="flex items-center gap-4 text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
                   <IconMail />
                 </div>
                 <div>
                   <p className="text-sm font-medium text-foreground">Email</p>
-                  <p className="text-sm">contato@debora.dev</p>
+                  <p className="text-sm">deborahellenvp@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="https://wa.me/5588992531384" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
+                  <IconBrandWhatsapp />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-foreground">WhatsApp</p>
+                  <p className="text-sm">(88) 99253-1384</p>
                 </div>
               </a>
               
@@ -45,10 +55,10 @@ export default function ContactSection() {
             </div>
 
             <div className="flex gap-4 pt-4">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-foreground hover:bg-purple-600 hover:text-white hover:border-purple-500 transition-all shadow-lg">
+              <a href="https://www.linkedin.com/in/debora-hellen-711955194" target="_blank" rel="noreferrer" className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-foreground hover:bg-purple-600 hover:text-white hover:border-purple-500 transition-all shadow-lg">
                 <IconBrandLinkedin />
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-foreground hover:bg-purple-600 hover:text-white hover:border-purple-500 transition-all shadow-lg">
+              <a href="https://github.com/debs-veras" target="_blank" rel="noreferrer" className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-foreground hover:bg-purple-600 hover:text-white hover:border-purple-500 transition-all shadow-lg">
                 <IconBrandGithub />
               </a>
             </div>

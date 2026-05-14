@@ -70,8 +70,7 @@ export default function AboutSection() {
               className="text-muted-foreground leading-relaxed"
             >
               Sou uma desenvolvedora apaixonada por criar experiências web
-              incríveis. Com um olhar atento ao design e à performance,
-              transformo ideias em aplicações reais e escaláveis. Minha jornada
+              incríveis. Com um olhar atento ao design e à performance. Minha jornada
               na tecnologia é movida pela curiosidade e pelo desejo contínuo de
               aprender e melhorar.
             </motion.p>
@@ -82,9 +81,7 @@ export default function AboutSection() {
             >
               Quando não estou codando, gosto de explorar novas tecnologias,
               contribuir para projetos open-source e me envolver com a
-              comunidade de desenvolvedores. Acredito que o código não é apenas
-              sobre máquinas, mas sobre como podemos melhorar a vida das pessoas
-              através da tecnologia.
+              comunidade de desenvolvedores.
             </motion.p>
 
             <motion.div variants={fadeUp} className="pt-4 flex gap-4">
