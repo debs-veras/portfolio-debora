@@ -18,12 +18,20 @@ export default function NavbarHome() {
   const { toggleTheme } = useTheme();
   const navItems = [
     {
-      name: 'projetos',
-      link: '#projects',
+      name: 'Início',
+      link: '#home',
     },
     {
-      name: 'Sobre mim',
+      name: 'Sobre',
       link: '#about',
+    },
+    {
+      name: 'Habilidades',
+      link: '#skills',
+    },
+    {
+      name: 'Projetos',
+      link: '#projects',
     },
     {
       name: 'Contato',

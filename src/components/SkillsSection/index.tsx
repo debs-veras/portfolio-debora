@@ -2,22 +2,30 @@ import { motion } from 'framer-motion';
 import { 
   IconBrandReact, 
   IconBrandTypescript, 
-  IconBrandTailwind, 
   IconBrandNodejs,
-  IconBrandNextjs,
   IconBrandFigma,
   IconBrandGit,
-  IconDatabase
+  IconDatabase,
+  IconBrandJavascript,
+  IconBrandAngular,
+  IconBrandBootstrap,
+  IconBrandDocker,
+  IconBrandGithub,
+  IconBrandVue, 
 } from '@tabler/icons-react';
 
 const skills = [
   { name: 'React', icon: IconBrandReact, color: '#61DAFB' },
   { name: 'TypeScript', icon: IconBrandTypescript, color: '#3178C6' },
-  { name: 'Next.js', icon: IconBrandNextjs, color: '#ffffff' },
-  { name: 'Tailwind CSS', icon: IconBrandTailwind, color: '#06B6D4' },
+  { name: 'Javascript', icon: IconBrandJavascript, color: '#F7DF1E' },
+  { name: 'Vue', icon: IconBrandVue, color: '#4FC08D' },
+  { name: 'Angular', icon: IconBrandAngular, color: '#DD0031' },
+  { name: 'Bootstrap', icon: IconBrandBootstrap, color: '#7952B3' },
   { name: 'Node.js', icon: IconBrandNodejs, color: '#339933' },
+  { name: 'Docker', icon: IconBrandDocker, color: '#2496ED' },
+  { name: 'SQL/NoSQL', icon: IconDatabase, color: '#4479A1' },
   { name: 'Git', icon: IconBrandGit, color: '#F05032' },
-  { name: 'SQL/NoSQL', icon: IconDatabase, color: '#336791' },
+  { name: 'Github', icon: IconBrandGithub, color: '#ffffff' },
   { name: 'Figma', icon: IconBrandFigma, color: '#F24E1E' },
 ];
 

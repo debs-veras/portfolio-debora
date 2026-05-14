@@ -259,7 +259,7 @@ export default function HeroSection() {
     console.log(theme);
   }, [theme]);
   return (
-    <section className="relative overflow-hidden">
+    <section id="home" className="relative overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         {/* ── HERO LAYOUT ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -424,7 +424,7 @@ export default function HeroSection() {
         >
           <div className="flex flex-wrap items-center gap-3 sm:gap-5">
             <span className="font-mono text-[9px] font-semibold uppercase tracking-widest text-purple-400 sm:text-[10px]">
-              Tecnologias que uso:
+              Minhas Especialidades:
             </span>
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
               {techs.map(({ Icon, name, color }) => (

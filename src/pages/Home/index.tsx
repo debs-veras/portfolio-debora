@@ -3,7 +3,6 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import SkillsSection from '@/components/SkillsSection';
-import ExperienceSection from '@/components/ExperienceSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import Particles from '@/components/ui/particles';
@@ -28,7 +27,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <ExperienceSection />
       <ProjectsSection />
       <ContactSection />
       <Footer />
