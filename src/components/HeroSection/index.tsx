@@ -36,20 +36,20 @@ const fadeUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.55, ease: 'easeOut' },
+    transition: { duration: 0.55, ease: 'easeOut' as const },
   },
 };
 
 const fadeRight = (delay: number) => ({
   initial: { opacity: 0, x: 40 },
   animate: { opacity: 1, x: 0 },
-  transition: { delay, duration: 0.6, ease: 'easeOut' },
+  transition: { delay, duration: 0.6, ease: 'easeOut' as const },
 });
 
 const fadeLeft = (delay: number) => ({
   initial: { opacity: 0, x: -30, y: 15 },
   animate: { opacity: 1, x: 0, y: 0 },
-  transition: { delay, duration: 0.5, ease: 'easeOut' },
+  transition: { delay, duration: 0.5, ease: 'easeOut' as const },
 });
 
 /* ─── Data ─── */
@@ -172,7 +172,7 @@ function UiUxCard() {
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: '85%' }}
-            transition={{ delay: 1.6, duration: 1, ease: 'easeOut' }}
+            transition={{ delay: 1.6, duration: 1, ease: 'easeOut' as const }}
             className="h-1 rounded-full bg-gradient-to-r from-purple-500 to-violet-400 dark:from-purple-600 dark:to-violet-400"
           />
         </div>
@@ -180,7 +180,7 @@ function UiUxCard() {
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: '60%' }}
-            transition={{ delay: 1.8, duration: 1, ease: 'easeOut' }}
+            transition={{ delay: 1.8, duration: 1, ease: 'easeOut' as const }}
             className="h-1 rounded-full bg-gradient-to-r from-purple-500/80 to-violet-400/80 dark:from-purple-600/80 dark:to-violet-400/80"
           />
         </div>
@@ -211,7 +211,7 @@ function PerformanceCard() {
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: '92%' }}
-            transition={{ delay: 2.0, duration: 1, ease: 'easeOut' }}
+            transition={{ delay: 2.0, duration: 1, ease: 'easeOut' as const }}
             className="h-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 dark:from-blue-600 dark:to-cyan-400"
           />
         </div>
@@ -219,7 +219,7 @@ function PerformanceCard() {
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: '72%' }}
-            transition={{ delay: 2.2, duration: 1, ease: 'easeOut' }}
+            transition={{ delay: 2.2, duration: 1, ease: 'easeOut' as const }}
             className="h-1 rounded-full bg-gradient-to-r from-blue-500/80 to-cyan-400/80 dark:from-blue-600/80 dark:to-cyan-400/80"
           />
         </div>
