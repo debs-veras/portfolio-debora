@@ -2,7 +2,6 @@ import { type Variants } from 'motion/react';
 import {
   IconBrandGithub,
   IconBrandLinkedin,
-  IconBrandTwitter,
   IconMail,
   IconArrowRight,
   IconDownload,
