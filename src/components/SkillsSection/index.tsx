@@ -59,7 +59,13 @@ export default function SkillsSection() {
               whileHover={{ y: -5, scale: 1.05 }}
               className="flex flex-col items-center justify-center p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 backdrop-blur-sm hover:border-purple-500/50 dark:hover:border-purple-500/50 transition-colors group shadow-lg"
             >
-              <skill.icon size={48} stroke={1.5} className="mb-4 transition-transform group-hover:scale-110" style={{ color: skill.color === '#ffffff' ? undefined : skill.color }} />
+              <skill.icon 
+                size={48} 
+                stroke={1.5} 
+                title={skill.name}
+                className="mb-4 transition-transform group-hover:scale-110" 
+                style={{ color: skill.color === '#ffffff' ? undefined : skill.color }} 
+              />
               <span className="text-sm font-medium text-foreground">{skill.name}</span>
             </motion.div>
           ))}

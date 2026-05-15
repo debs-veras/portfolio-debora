@@ -1,0 +1,17 @@
+{
+  "name": "Débora Hellen | Desenvolvedora Full Stack",
+  "short_name": "Débora Hellen",
+  "description": "Portfolio de Débora Hellen, Desenvolvedora Full Stack apaixonada por criar soluções digitais modernas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
