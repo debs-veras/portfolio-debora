@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🚀 Débora Hellen | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do meu portfolio pessoal! Este projeto é uma vitrine digital desenvolvida para demonstrar minhas habilidades técnicas, projetos recentes e trajetória como desenvolvedora.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Design Responsivo**: Experiência otimizada para dispositivos móveis, tablets e desktops.
+- **Interface Moderna**: UI/UX focada em minimalismo, performance e acessibilidade.
+- **Animações Fluídas**: Transições suaves e efeitos visuais utilizando Framer Motion e GSAP.
+- **Elementos 3D**: Integração de elementos interativos com Three.js/OGL.
+- **Formulário de Contato**: Envio de e-mails funcional integrado via EmailJS com validação completa.
+- **Performance**: Velocidade de carregamento otimizada utilizando Vite e componentes otimizados.
+- **Dark Mode Nativo**: Estética premium focada em legibilidade e conforto visual.
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este projeto foi construído com as melhores e mais modernas ferramentas do ecossistema Web:
 
-## Expanding the ESLint configuration
+### Core
+- **React 19**: Biblioteca para construção de interfaces.
+- **TypeScript**: Superset de JavaScript com tipagem estática.
+- **Vite**: Build tool extremamente rápida para desenvolvimento moderno.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Estilização & UI
+- **Tailwind CSS v4**: Framework CSS utility-first para estilização rápida.
+- **Shadcn/UI**: Componentes de UI acessíveis e altamente personalizáveis.
+- **Framer Motion & GSAP**: Poderosas bibliotecas de animação.
+- **Three.js & OGL**: Renderização de gráficos 3D e efeitos webgl.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Formulários & Validação
+- **React Hook Form**: Gerenciamento de formulários performático.
+- **Zod**: Validação de esquemas com foco em tipagem segura.
+- **EmailJS**: Integração para envio de e-mails diretamente do client-side.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Ferramentas Adicionais
+- **Zustand**: Gerenciamento de estado leve e escalável.
+- **Lucide React & Tabler Icons**: Conjuntos de ícones modernos.
+- **Prettier & ESLint**: Manutenção da qualidade e padronização do código.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## 🚀 Como Executar o Projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Siga os passos abaixo para rodar o projeto localmente:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/debs-veras/portfolio-debora.git
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+2. **Entre no diretório:**
+   ```bash
+   cd portfolio-debora
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   pnpm install
+   # ou npm install / yarn install
+   ```
+
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   pnpm dev
+   ```
+
+5. **Acesse no navegador:**
+   O projeto estará disponível em `http://localhost:5173`.
+
+## 📧 Contato
+
+Sinta-se à vontade para entrar em contato comigo por qualquer um dos canais abaixo:
+
+- **Email**: [deborahellenvp@gmail.com](mailto:deborahellenvp@gmail.com)
+- **LinkedIn**: [Débora Hellen](https://www.linkedin.com/in/debora-hellen-711955194)
+- **GitHub**: [@debs-veras](https://github.com/debs-veras)
+- **WhatsApp**: [(88) 99253-1384](https://wa.me/5588992531384)
+
+---
+
+Desenvolvido com 💜 por Débora Hellen.
