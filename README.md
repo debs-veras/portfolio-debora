@@ -11,6 +11,7 @@ Bem-vindo ao repositório do meu portfolio pessoal! Este projeto é uma vitrine 
 - **Formulário de Contato**: Envio de e-mails funcional integrado via EmailJS com validação completa.
 - **Performance**: Velocidade de carregamento otimizada utilizando Vite e componentes otimizados.
 - **Dark Mode Nativo**: Estética premium focada em legibilidade e conforto visual.
+- **SEO Otimizado**: Meta tags completas, Open Graph, Twitter cards, robots.txt e sitemap.xml para máxima visibilidade.
 
 ## 🛠️ Tecnologias Utilizadas
 
