@@ -40,9 +40,7 @@ const slugs = [
   'figma',
 ];
 
-const iconUrls = slugs.map(
-  (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
-);
+const iconUrls = slugs.map((slug) => `https://cdn.simpleicons.org/${slug}`);
 
 export default function AboutSection() {
   return (

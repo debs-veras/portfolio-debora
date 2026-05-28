@@ -7,9 +7,6 @@ export default function Footer() {
         <p className="text-sm text-muted-foreground text-center md:text-left">
           &copy; {currentYear} Débora Hellen. Todos os direitos reservados.
         </p>
-        <p className="text-sm text-muted-foreground text-center md:text-right flex items-center justify-center gap-1">
-          Feito com <span className="text-red-500 animate-pulse">&hearts;</span> e muito café.
-        </p>
       </div>
     </footer>
   )
