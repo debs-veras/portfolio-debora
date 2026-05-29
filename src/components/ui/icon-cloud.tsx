@@ -212,7 +212,19 @@ export function IconCloud({ icons, images }: IconCloudProps) {
     const canvas = canvasRef.current
     const ctx = canvas?.getContext("2d")
     if (canvas && ctx) {
+      // Throttle on mobile: skip every other frame
+      const isMobile = window.innerWidth < 768
+      let frameCount = 0
+
       const animate = () => {
+        frameCount++
+
+        // On mobile, only render every 2nd frame for performance
+        if (isMobile && frameCount % 2 !== 0) {
+          animationFrameRef.current = requestAnimationFrame(animate)
+          return
+        }
+
         ctx.clearRect(0, 0, canvas.width, canvas.height)
 
         const centerX = canvas.width / 2

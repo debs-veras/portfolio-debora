@@ -30,6 +30,7 @@ interface TextTypeProps {
   onSentenceComplete?: (sentence: string, index: number) => void;
   startOnVisible?: boolean;
   reverseMode?: boolean;
+  disableTyping?: boolean;
 }
 
 const TextType = ({
@@ -51,6 +52,7 @@ const TextType = ({
   onSentenceComplete,
   startOnVisible = false,
   reverseMode = false,
+  disableTyping = false,
   ...props
 }: TextTypeProps & React.HTMLAttributes<HTMLElement>) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -95,21 +97,23 @@ const TextType = ({
     return () => observer.disconnect();
   }, [startOnVisible]);
 
-  useEffect(() => {
-    if (showCursor && cursorRef.current) {
-      gsap.set(cursorRef.current, { opacity: 1 });
-      gsap.to(cursorRef.current, {
-        opacity: 0,
-        duration: cursorBlinkDuration,
-        repeat: -1,
-        yoyo: true,
-        ease: 'power2.inOut',
-      });
-    }
-  }, [showCursor, cursorBlinkDuration]);
+  const shouldShowCursor = showCursor && !disableTyping;
 
   useEffect(() => {
-    if (!isVisible) return;
+    if (!shouldShowCursor || !cursorRef.current) return;
+
+    gsap.set(cursorRef.current, { opacity: 1 });
+    gsap.to(cursorRef.current, {
+      opacity: 0,
+      duration: cursorBlinkDuration,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power2.inOut',
+    });
+  }, [shouldShowCursor, cursorBlinkDuration]);
+
+  useEffect(() => {
+    if (!isVisible || disableTyping) return;
 
     let timeout: ReturnType<typeof setTimeout>;
 
@@ -180,7 +184,15 @@ const TextType = ({
     reverseMode,
     variableSpeed,
     onSentenceComplete,
+    disableTyping,
   ]);
+
+  useEffect(() => {
+    if (!disableTyping) return;
+    setDisplayedText(textArray[currentTextIndex]);
+    setCurrentCharIndex(textArray[currentTextIndex].length);
+    setIsDeleting(false);
+  }, [disableTyping, currentTextIndex, textArray]);
 
   const shouldHideCursor =
     hideCursorWhileTyping &&
@@ -199,7 +211,7 @@ const TextType = ({
     >
       {displayedText}
     </span>,
-    showCursor && (
+    shouldShowCursor && (
       <span
         ref={cursorRef}
         className={`ml-1 inline-block opacity-100 ${shouldHideCursor ? 'hidden' : ''} ${cursorClassName}`}

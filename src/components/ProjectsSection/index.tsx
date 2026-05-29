@@ -8,6 +8,7 @@ import {
 } from '@tabler/icons-react';
 
 import PlasmaWave from '../PlasmaWave';
+import { useIsMobile } from '@/hooks/useIsMobile';
 
 type Project = {
   title: string;
@@ -342,6 +343,7 @@ const TABS: { id: Category; label: string }[] = [
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState<Category>('web');
   const [currentPage, setCurrentPage] = useState(1);
+  const isMobile = useIsMobile();
 
   const ITEMS_PER_PAGE = 6;
   const filteredProjects = PROJECTS[activeTab] || [];
@@ -368,18 +370,28 @@ export default function ProjectsSection() {
             transition={{ duration: 0.6 }}
             className="relative text-center py-16"
           >
-            {/* PlasmaWave apenas no bloco do título */}
-            <div className="absolute inset-0 z-0  opacity-40 ">
-              <PlasmaWave
-                colors={['#A855F7', '#06B6D4']}
-                speed1={0.05}
-                speed2={0.05}
-                focalLength={0.8}
-                bend1={1}
-                bend2={0.5}
-                dir2={1}
-                rotationDeg={0}
-              />
+            {/* PlasmaWave no desktop, gradiente estático no mobile */}
+            <div className="absolute inset-0 z-0 opacity-40">
+              {isMobile ? (
+                <div
+                  className="w-full h-full"
+                  style={{
+                    background:
+                      'radial-gradient(ellipse at center, rgba(168,85,247,0.3) 0%, rgba(6,182,212,0.15) 40%, transparent 70%)',
+                  }}
+                />
+              ) : (
+                <PlasmaWave
+                  colors={['#A855F7', '#06B6D4']}
+                  speed1={0.05}
+                  speed2={0.05}
+                  focalLength={0.8}
+                  bend1={1}
+                  bend2={0.5}
+                  dir2={1}
+                  rotationDeg={0}
+                />
+              )}
             </div>
 
             {/* Conteúdo do título */}

@@ -7,22 +7,28 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import Particles from '@/components/ui/particles';
 import { LightRays } from '@/components/ui/light-rays';
+import { useIsMobile } from '@/hooks/useIsMobile';
 
 export default function Home() {
+  const isMobile = useIsMobile();
+
   return (
     <>
       <Particles
         particleColors={['#7c3aed', '#a78bfa', '#8b5cf6', '#c4b5fd', '#6d28d9']}
-        particleCount={200}
+        particleCount={isMobile ? 50 : 200}
         particleSpread={10}
         speed={0.1}
-        particleBaseSize={100}
+        particleBaseSize={isMobile ? 50 : 100}
         moveParticlesOnHover={false}
         alphaParticles={false}
         disableRotation={false}
         pixelRatio={1}
       />
-      <LightRays color="rgba(123, 57, 245, 0.25)" />
+      <LightRays
+        color="rgba(123, 57, 245, 0.25)"
+        count={isMobile ? 3 : 7}
+      />
       <NavBarHome />
       <HeroSection />
       <AboutSection />

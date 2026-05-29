@@ -19,7 +19,7 @@ import heroImgLight from '@/assets/hero-light.png';
 import TextType from '../TextType';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 /* ─── Animation Variants ─── */
 
 const stagger = {
@@ -264,11 +264,24 @@ function CleanCodeCard() {
    ═══════════════════════════════════════════════════ */
 export default function HeroSection() {
   const { theme } = useTheme();
+  const heroRef = useRef<HTMLElement>(null);
+  const [disableTextAnimation, setDisableTextAnimation] = useState(false);
+
   useEffect(() => {
-    console.log(theme);
-  }, [theme]);
+    const handleScroll = () => {
+      if (!heroRef.current) return;
+      setDisableTextAnimation(window.scrollY > heroRef.current.offsetHeight);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+
   return (
-    <section id="home" className="relative overflow-hidden">
+    <section id="home" ref={heroRef} className="relative overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         {/* ── HERO LAYOUT ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -306,6 +319,7 @@ export default function HeroSection() {
                   cursorCharacter="_"
                   deletingSpeed={50}
                   cursorBlinkDuration={0.5}
+                  disableTyping={disableTextAnimation}
                 />
               </motion.h1>
 
@@ -402,6 +416,8 @@ export default function HeroSection() {
                 key={theme}
                 src={theme === 'dark' ? heroImg : heroImgLight}
                 alt="Developer character"
+                // @ts-expect-error fetchpriority is valid HTML but not yet in React types
+                fetchpriority="high"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35, duration: 0.8 }}
