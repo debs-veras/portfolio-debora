@@ -28,7 +28,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Explorer NASA é uma aplicação frontend desenvolvida em React + TypeScript que consome a NASA Open API (APOD – Astronomy Picture of the Day) para exibir uma galeria de imagens e vídeos astronômicos.',
       technologies: ['TypeScript', 'React', 'Tailwind'],
-      image: '/projetos/explorer-nasa.png',
+      image: '/projetos/explorer-nasa.webp',
       github: 'https://github.com/debs-veras/explorer-nasa',
       link: 'https://explorer-nasa.vercel.app',
     },
@@ -37,7 +37,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'MovieExplore é um front-end em React + TypeScript + Vite para pesquisar filmes e séries usando a API do TMDB. O projeto oferece busca, página de detalhes, autenticação e gerenciamento de favoritos (Minha Coleção).',
       technologies: ['React/TypeScript', 'Tailwind'],
-      image: '/projetos/movie-explore.png',
+      image: '/projetos/movie-explore.webp',
       github: 'https://github.com/debs-veras/search-movie',
       link: 'https://search-movie-explore.vercel.app/',
     },
@@ -46,7 +46,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'O CCBlog é uma plataforma web desenvolvida para centralizar informações, notícias e gestão acadêmica do curso de Ciência da Computação',
       technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
-      image: '/projetos/ccblog.png',
+      image: '/projetos/ccblog.webp',
       github: 'https://github.com/debs-veras/ccblog',
       link: 'https://ccblog-zeta.vercel.app/',
     },
@@ -55,7 +55,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'O Coded é uma plataforma robusta de gestão acadêmica projetada para simplificar a organização de atividades escolares.',
       technologies: ['React/TypeScript', 'Tailwind', 'Python', 'Docker'],
-      image: '/projetos/coded.png',
+      image: '/projetos/coded.webp',
       github: 'https://github.com/debs-veras/coded',
     },
     {
@@ -63,7 +63,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Um quiz interativo com a temática do anime Naruto. Este projeto foi desenvolvido para testar os conhecimentos dos fãs do universo ninja, apresentando perguntas dinâmicas e gerenciamento de estado avançado.',
       technologies: ['React/TypeScript', 'Tailwind'],
-      image: '/projetos/quiz-naruto.png',
+      image: '/projetos/quiz-naruto.webp',
       github: 'https://github.com/debs-veras/quiz-naruto-fe',
       link: 'https://quiz-naruto-fe.vercel.app',
     },
@@ -72,7 +72,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este é o frontend do BlogTech, uma plataforma de blog moderna e performática desenvolvida para oferecer a melhor experiência na criação e leitura de conteúdos tecnológicos.(Acesso estão no readme/documentação do projeto)',
       technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
-      image: '/projetos/blog-tech.png',
+      image: '/projetos/blog-tech.webp',
       github: 'https://github.com/debs-veras/blogtech-fe',
     },
     {
@@ -80,7 +80,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este projeto consiste em uma landing page de página única (SPA) com navegação por âncoras, construída para servir como portfólio pessoal e também como base reutilizável para páginas institucionais.',
       technologies: ['React', 'Typescript', 'Tailwind'],
-      image: '/projetos/portfolio.png',
+      image: '/projetos/portfolio.webp',
       github: 'https://github.com/debs-veras/landing-page',
     },
     {
@@ -88,7 +88,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Site imobiliário moderno desenvolvido para a Sinal Verde Negócios Imobiliários. Design responsivo, animações com Framer Motion e catálogo de imóveis dinâmico.',
       technologies: ['React/TypeScript', 'Tailwind'],
-      image: '/projetos/sinal-verde.png',
+      image: '/projetos/sinal-verde.webp',
       link: 'https://sinal-verde-site.vercel.app/',
     },
     {
@@ -96,7 +96,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Landing page institucional para AltusBranding, focada em branding estratégico, design e experiência digital.',
       technologies: ['React', 'Typescript', 'Tailwind'],
-      image: '/projetos/altusbranding.png',
+      image: '/projetos/altusbranding.webp',
       github: 'https://github.com/debs-veras/altusbranding',
       link: 'https://altusbranding.vercel.app',
     },
@@ -105,7 +105,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Um componente interativo em React que exibe detalhes completos de um Pokémon em um modal animado, consumindo dados em tempo real da PokéAPI. Uma Pokédex interativa desenvolvida para fins de aprendizado',
       technologies: ['React', 'Typescript', 'Tailwind'],
-      image: '/projetos/pokedex.png',
+      image: '/projetos/pokedex.webp',
       link: 'https://pokedex-orpin-chi-52.vercel.app/',
       github: 'https://github.com/debs-veras/pokedex',
     },
@@ -114,7 +114,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este projeto foi desenvolvido como parte do processo seletivo técnico de uma empresa, com o objetivo de demonstrar habilidades em desenvolvimento frontend, organização de código, regras de negócio, integração com API e experiência do usuário.',
       technologies: ['React/JavaScript', 'Tailwind'],
-      image: '/projetos/selecao-box3.png',
+      image: '/projetos/selecao-box3.webp',
       github: 'https://github.com/debs-veras/react-selecao-box3',
       link: 'https://react-selecao-box3.vercel.app/',
     },
@@ -123,7 +123,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Jogo da Memória desenvolvido com HTML, CSS e JavaScript. O projeto começou a partir de um estudo de um jogo base apresentado em um vídeo do YouTube, mas foi fortemente expandido e refatorado, recebendo novas funcionalidades e modos de jogo adicionais.',
       technologies: ['JavaScript', 'CSS', 'HTML'],
-      image: '/projetos/memory-game.png',
+      image: '/projetos/memory-game.webp',
       github: 'https://github.com/debs-veras/memory-game',
       link: 'https://memory-game-debs.vercel.app',
     },
@@ -132,7 +132,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este projeto é um sistema de chat em tempo real que permite conversas entre usuários conectados. Foi desenvolvido usando React para o frontend e Socket.IO com Node.js para o backend.',
       technologies: ['TypeScript', 'React', 'Tailwind'],
-      image: '/projetos/box-chat.png',
+      image: '/projetos/box-chat.webp',
       github: 'https://github.com/debs-veras/box_chat',
     },
     {
@@ -140,7 +140,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Uma réplica visual da página de entrada (landing page) da Netflix, focada em design responsivo, performance e experiência do usuário premium.',
       technologies: ['JavaScript', 'CSS', 'HTML'],
-      image: '/projetos/clone-netflix.png',
+      image: '/projetos/clone-netflix.webp',
       github: 'https://github.com/debs-veras/clone-netflix',
       link: 'https://clone-netflix-debs.vercel.app',
     },
@@ -149,7 +149,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Site institucional desenvolvido para a AltusAerial, focado na apresentação de serviços, identidade visual moderna e navegação responsiva.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: '/projetos/altus-aerial.png',
+      image: '/projetos/altus-aerial.webp',
       link: 'https://altusaerial.com.br/',
     },
     {
@@ -157,7 +157,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Aplicação web desenvolvida durante o NASA International Space Apps Challenge 2025. O projeto auxilia no planejamento de eventos mais seguros ao permitir a consulta de condições climáticas',
       technologies: ['React', 'TypeScript', 'CSS'],
-      image: '/projetos/when-and-weather.png',
+      image: '/projetos/when-and-weather.webp',
       github: 'https://github.com/CodeStormNinja/when-and-weather',
     },
     {
@@ -165,7 +165,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este é um projeto digital que visa promover, divulgar e fortalecer práticas de Educação Popular em Saúde, alinhadas à participação social e às políticas públicas de base comunitária.',
       technologies: ['PHP', 'Bootstrap', 'CSS', 'HTML'],
-      image: '/projetos/educacao-popular.png',
+      image: '/projetos/educacao-popular.webp',
       github: 'https://github.com/debs-veras/site-educacao-popular',
     },
     {
@@ -173,7 +173,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este é um projeto simples de um jogo Pedra, Papel e Tesoura desenvolvido com HTML, CSS e JavaScript.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: '/projetos/pedra-papel-tesoura.png',
+      image: '/projetos/pedra-papel-tesoura.webp',
       link: 'https://jogo-pedra-papel-tesoura-debs.vercel.app',
       github: 'https://github.com/debs-veras/jogo-pedra-papel-tesoura',
     },
@@ -256,7 +256,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Uma Pokédex interativa desenvolvida para fins de aprendizado, exibindo informações de Pokémon de forma visual e organizada.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
-      image: '/projetos/mapadev.png',
+      image: '/projetos/mapadev.webp',
       link: 'https://pokedex-mapadev-debs.vercel.app',
       github: 'https://github.com/debs-veras/pokedex-mapadev',
     },
@@ -266,7 +266,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Este projeto demonstra o efeito parallax utilizando imagens em uma página web.',
       technologies: ['HTML', 'CSS'],
-      image: '/projetos/parallax.png',
+      image: '/projetos/parallax.webp',
       link: 'https://parallax-debs.vercel.app',
       github: 'https://github.com/debs-veras/parallax',
     },
@@ -275,7 +275,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Projeto de estudo de um site de notícias simulado com layout de portal informativo.',
       technologies: ['HTML', 'CSS'],
-      image: '/projetos/blog-noticia.png',
+      image: '/projetos/blog-noticia.webp',
       link: 'https://blog-noticia-debs.vercel.app',
       github: 'https://github.com/debs-veras/blog-noticia',
     },
@@ -284,7 +284,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Uma aplicação web simples e funcional para gerenciamento de tarefas (To-Do List), desenvolvida em PHP com arquitetura MVC (Model-View-Controller) e integração com banco de dados MySQL.',
       technologies: ['PHP', 'HTML', 'JavaScript', 'CSS'],
-      image: '/projetos/app-lista-tarefas.png',
+      image: '/projetos/app-lista-tarefas.webp',
       github: 'https://github.com/debs-veras/app_lista_tarefas',
     },
     {
@@ -292,7 +292,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'App Help Desk é uma aplicação simples em PHP para gerenciamento de chamados (help desk), construída para fins didáticos. Permite que usuários registrem, visualizem e gerenciem solicitações de suporte técnico.(Credenciais para login estão no README do projeto).',
       technologies: ['HTML', 'JavaScript', 'CSS', 'Bootstrap', 'PHP'],
-      image: '/projetos/app-desk.png',
+      image: '/projetos/app-desk.webp',
       github: 'https://github.com/debs-veras/app_help_desk.git',
     },
     {
@@ -300,7 +300,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Esse repositório contém a Pokédex completa que foi construída durante um tutorial no YouTube pelo canal Manual do Dev, usando as linguagens de front‑end HTML, CSS e JavaScript para criar uma aplicação interativa que lista Pokémons e mostra detalhes sobre eles.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
-      image: '/projetos/pokedex-completa.png',
+      image: '/projetos/pokedex-completa.webp',
       link: 'https://pokedex-completo-debs.vercel.app',
       github: 'https://github.com/debs-veras/pokedex-completo',
     },
@@ -309,7 +309,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Um jogo simples e divertido onde o objetivo é matar os mosquitos que aparecem na tela dentro de um certo tempo. O jogo possui múltiplos níveis de dificuldade e aumenta a velocidade conforme você progride.',
       technologies: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
-      image: '/projetos/mata-mosquito.png',
+      image: '/projetos/mata-mosquito.webp',
       link: 'https://game-mata-mosquito-debs.vercel.app',
       github: 'https://github.com/debs-veras/game-mata-mosquito',
     },
@@ -318,7 +318,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Site fictício do Museu Nacional, desenvolvido exclusivamente para fins educacionais. O objetivo é praticar conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript.',
       technologies: ['HTML', 'CSS'],
-      image: '/projetos/museu-nacional.png',
+      image: '/projetos/museu-nacional.webp',
       link: 'https://site-museu-debs.vercel.app',
       github: 'https://github.com/debs-veras/site-museu',
     },
@@ -327,7 +327,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Organo é uma aplicação web desenvolvida com fins educativos, que permite organizar pessoas e times de forma visual e intuitiva.',
       technologies: ['HTML', 'CSS', 'React'],
-      image: '/projetos/organo.png',
+      image: '/projetos/organo.webp',
       link: 'https://organo-sage-omega.vercel.app/',
       github: 'https://github.com/debs-veras/organo',
     },
