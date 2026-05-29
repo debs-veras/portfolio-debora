@@ -14,8 +14,8 @@ import {
   IconBrandGit,
   IconBrandJavascript,
 } from '@tabler/icons-react';
-import heroImg from '@/assets/hero.png';
-import heroImgLight from '@/assets/hero-light.png';
+import heroImg from '@/assets/hero.webp';
+import heroImgLight from '@/assets/hero-light.webp';
 import TextType from '../TextType';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
