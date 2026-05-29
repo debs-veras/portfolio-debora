@@ -26,16 +26,16 @@ const stagger = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.12, delayChildren: 0.15 },
+    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
   },
 };
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.55, ease: 'easeOut' as const },
+    transition: { duration: 0.4, ease: 'easeOut' as const },
   },
 };
 
@@ -329,9 +329,8 @@ export default function HeroSection() {
               </motion.h1>
 
               {/* Subtitle */}
-              <motion.p
-                variants={fadeUp}
-                className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]"
+              <p
+                className="text-sm leading-relaxed text-muted-foreground sm:text-[15px] animate-in fade-in duration-500"
               >
                 Trabalho criando aplicações{' '}
                 <span className="font-medium text-purple-400">frontend</span>{' '}
@@ -346,7 +345,7 @@ export default function HeroSection() {
                 </span>{' '}
                 com propósito. Gosto de frontend porque é onde lógica,
                 criatividade e experiência real se encontram.
-              </motion.p>
+              </p>
 
               {/* CTA */}
               <motion.div
