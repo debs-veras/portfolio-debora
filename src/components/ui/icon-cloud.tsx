@@ -123,11 +123,10 @@ export function IconCloud({ icons, images }: IconCloudProps) {
 
   // Handle mouse events
   const handleMouseDown = (e: React.MouseEvent<HTMLCanvasElement>) => {
-    const rect = canvasRef.current?.getBoundingClientRect()
-    if (!rect || !canvasRef.current) return
+    if (!canvasRef.current) return
 
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
+    const x = e.nativeEvent.offsetX
+    const y = e.nativeEvent.offsetY
 
     const ctx = canvasRef.current.getContext("2d")
     if (!ctx) return
@@ -183,12 +182,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
   }
 
   const handleMouseMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
-    const rect = canvasRef.current?.getBoundingClientRect()
-    if (rect) {
-      const x = e.clientX - rect.left
-      const y = e.clientY - rect.top
-      setMousePos({ x, y })
-    }
+    setMousePos({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY })
 
     if (isDragging) {
       const deltaX = e.clientX - lastMousePos.x
@@ -211,7 +205,17 @@ export function IconCloud({ icons, images }: IconCloudProps) {
   useEffect(() => {
     const canvas = canvasRef.current
     const ctx = canvas?.getContext("2d")
+    let observer: IntersectionObserver | null = null
     if (canvas && ctx) {
+      let isVisible = true
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          isVisible = entry.isIntersecting
+        },
+        { threshold: 0 }
+      )
+      observer.observe(canvas)
+
       // Throttle on mobile: skip every other frame
       const isMobile = window.innerWidth < 768
       let frameCount = 0
@@ -221,6 +225,12 @@ export function IconCloud({ icons, images }: IconCloudProps) {
 
         // On mobile, only render every 2nd frame for performance
         if (isMobile && frameCount % 2 !== 0) {
+          animationFrameRef.current = requestAnimationFrame(animate)
+          return
+        }
+
+        // Pause rendering when off-screen
+        if (!isVisible) {
           animationFrameRef.current = requestAnimationFrame(animate)
           return
         }
@@ -312,6 +322,9 @@ export function IconCloud({ icons, images }: IconCloudProps) {
     return () => {
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current)
+      }
+      if (observer) {
+        observer.disconnect()
       }
     }
   }, [icons, images, iconPositions, isDragging, mousePos, targetRotation])

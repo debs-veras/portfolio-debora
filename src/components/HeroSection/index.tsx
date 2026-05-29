@@ -268,14 +268,19 @@ export default function HeroSection() {
   const [disableTextAnimation, setDisableTextAnimation] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!heroRef.current) return;
-      setDisableTextAnimation(window.scrollY > heroRef.current.offsetHeight);
-    };
+    const heroElement = heroRef.current;
+    if (!heroElement) return;
 
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Disable typing animation if Hero is out of view
+        setDisableTextAnimation(!entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+
+    observer.observe(heroElement);
+    return () => observer.disconnect();
   }, []);
 
 

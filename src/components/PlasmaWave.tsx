@@ -199,10 +199,22 @@ export default function PlasmaWave(props: PlasmaWaveProps) {
     ro.observe(ctn);
     resize();
 
+    let isVisible = true;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    io.observe(ctn);
+
     const startTime = performance.now();
     let animateId: number;
 
     const update = (now: number) => {
+      animateId = requestAnimationFrame(update);
+      if (!isVisible) return;
+
       const {
         xOffset: xOff = 0,
         yOffset: yOff = 0,
@@ -230,12 +242,12 @@ export default function PlasmaWave(props: PlasmaWaveProps) {
       program.uniforms.uColor2.value = hexToRgb(cols[1]);
 
       renderer.render({ scene, camera });
-      animateId = requestAnimationFrame(update);
     };
 
     animateId = requestAnimationFrame(update);
 
     return () => {
+      io.disconnect();
       cancelAnimationFrame(animateId);
       ro.disconnect();
       if (ctn && gl.canvas.parentNode === ctn) {

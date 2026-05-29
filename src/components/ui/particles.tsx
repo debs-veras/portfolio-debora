@@ -116,6 +116,7 @@ const Particles = ({
 }: ParticlesProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef({ x: 0, y: 0 });
+  const rectRef = useRef({ left: 0, top: 0, width: 0, height: 0 });
 
   useEffect(() => {
     const container = containerRef.current;
@@ -142,10 +143,18 @@ const Particles = ({
     window.addEventListener('resize', resize, false);
     resize();
 
+    let isVisible = true;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    observer.observe(container);
+
     const handleMouseMove = (e: MouseEvent) => {
-      const rect = container.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-      const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+      const x = (e.offsetX / container.clientWidth) * 2 - 1;
+      const y = -(e.offsetY / container.clientHeight) * 2 - 1;
       mouseRef.current = { x, y };
     };
 
@@ -214,6 +223,8 @@ const Particles = ({
 
     const update = (t: number) => {
       animationFrameId = requestAnimationFrame(update);
+      if (!isVisible) return;
+
       const delta = t - lastTime;
       lastTime = t;
       elapsed += delta * speed;
@@ -240,6 +251,7 @@ const Particles = ({
     animationFrameId = requestAnimationFrame(update);
 
     return () => {
+      observer.disconnect();
       window.removeEventListener('resize', resize);
       if (moveParticlesOnHover) {
         container.removeEventListener('mousemove', handleMouseMove);
