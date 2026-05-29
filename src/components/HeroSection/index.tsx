@@ -306,7 +306,7 @@ export default function HeroSection() {
               {/* Heading */}
               <motion.h1
                 variants={fadeUp}
-                className="font-heading text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl xl:text-[3.6rem]"
+                className="font-heading text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl xl:text-[3.6rem] min-h-[120px] sm:min-h-[160px] xl:min-h-[180px]"
               >
                 <TextType
                   text={[
@@ -418,10 +418,12 @@ export default function HeroSection() {
                 alt="Developer character"
                 // @ts-expect-error fetchpriority is valid HTML but not yet in React types
                 fetchpriority="high"
+                width={1024}
+                height={1536}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35, duration: 0.8 }}
-                className="absolute bottom-[-80px] sm:bottom-[-50px] lg:bottom-[-100px] left-1/2 -translate-x-1/2 object-contain h-[480px] sm:h-[520px] lg:h-[680px]"
+                className="absolute bottom-[-80px] sm:bottom-[-50px] lg:bottom-[-100px] left-1/2 -translate-x-1/2 object-contain h-[480px] sm:h-[520px] lg:h-[680px] w-auto"
                 style={{
                   filter: 'drop-shadow(0 0 48px rgba(139,92,246,0.25))',
                 }}
