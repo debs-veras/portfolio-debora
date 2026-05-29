@@ -116,7 +116,6 @@ const Particles = ({
 }: ParticlesProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef({ x: 0, y: 0 });
-  const rectRef = useRef({ left: 0, top: 0, width: 0, height: 0 });
 
   useEffect(() => {
     const container = containerRef.current;
