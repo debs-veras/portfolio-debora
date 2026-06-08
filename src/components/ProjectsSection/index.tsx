@@ -51,6 +51,16 @@ const PROJECTS: Record<Category, Project[]> = {
       link: 'https://ccblog-zeta.vercel.app/',
     },
     {
+      title: 'Git Humilha',
+      description:
+        'Git Humilha é uma aplicação React que analisa perfis públicos do GitHub e gera um roast técnico sobre os repositórios, linguagens, estrelas, forks, projetos arquivados e sinais de atividade.',
+      technologies: ['React/TypeScript', 'Tailwind', ],
+      image: '/projetos/githumilha.webp',
+      github: 'https://github.com/debs-veras/git-humilha',
+      link: 'https://git-humilha.vercel.app/',
+    },
+
+    {
       title: 'Seleção Coded',
       description:
         'O Coded é uma plataforma robusta de gestão acadêmica projetada para simplificar a organização de atividades escolares.',
