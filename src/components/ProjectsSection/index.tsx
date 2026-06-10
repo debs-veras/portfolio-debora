@@ -24,9 +24,38 @@ type Category = 'web' | 'academico' | 'cursos';
 const PROJECTS: Record<Category, Project[]> = {
   web: [
     {
+      title: 'CCBlog',
+      description:'O CCBlog é uma plataforma web desenvolvida para centralizar informações, notícias e gestão acadêmica do curso de Ciência da Computação',
+      technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
+      image: '/projetos/ccblog.webp',
+      github: 'https://github.com/debs-veras/ccblog',
+      link: 'https://ccblog-zeta.vercel.app/',
+    },
+    {
+      title: 'Sinal Verde',
+      description: 'Site imobiliário moderno desenvolvido para a Sinal Verde Negócios Imobiliários. Design responsivo, animações com Framer Motion e catálogo de imóveis dinâmico.',
+      technologies: ['React/TypeScript', 'Tailwind'],
+      image: '/projetos/sinal-verde.webp',
+      link: 'https://sinal-verde-site.vercel.app/',
+    },
+    {
+      title: 'AltusBranding ',
+      description: 'Landing page institucional para AltusBranding, focada em branding estratégico, design e experiência digital.',
+      technologies: ['React', 'Typescript', 'Tailwind'],
+      image: '/projetos/altusbranding.webp',
+      github: 'https://github.com/debs-veras/altusbranding',
+      link: 'https://altusbranding.vercel.app',
+    },
+    {
+      title: 'BoxChat',
+      description: 'Este projeto é um sistema de chat em tempo real que permite conversas entre usuários conectados. Foi desenvolvido usando React para o frontend e Socket.IO com Node.js para o backend.',
+      technologies: ['TypeScript', 'React', 'Tailwind'],
+      image: '/projetos/box-chat.webp',
+      github: 'https://github.com/debs-veras/box_chat',
+    },
+    {
       title: 'Explorer NASA',
-      description:
-        'Explorer NASA é uma aplicação frontend desenvolvida em React + TypeScript que consome a NASA Open API (APOD – Astronomy Picture of the Day) para exibir uma galeria de imagens e vídeos astronômicos.',
+      description: 'Explorer NASA é uma aplicação frontend desenvolvida em React + TypeScript que consome a NASA Open API (APOD – Astronomy Picture of the Day) para exibir uma galeria de imagens e vídeos astronômicos.',
       technologies: ['TypeScript', 'React', 'Tailwind'],
       image: '/projetos/explorer-nasa.webp',
       github: 'https://github.com/debs-veras/explorer-nasa',
@@ -34,86 +63,45 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'MovieExplore',
-      description:
-        'MovieExplore é um front-end em React + TypeScript + Vite para pesquisar filmes e séries usando a API do TMDB. O projeto oferece busca, página de detalhes, autenticação e gerenciamento de favoritos (Minha Coleção).',
+      description: 'MovieExplore é um front-end em React + TypeScript + Vite para pesquisar filmes e séries usando a API do TMDB. O projeto oferece busca, página de detalhes, autenticação e gerenciamento de favoritos (Minha Coleção).',
       technologies: ['React/TypeScript', 'Tailwind'],
       image: '/projetos/movie-explore.webp',
       github: 'https://github.com/debs-veras/search-movie',
       link: 'https://search-movie-explore.vercel.app/',
     },
     {
-      title: 'CCBlog',
-      description:
-        'O CCBlog é uma plataforma web desenvolvida para centralizar informações, notícias e gestão acadêmica do curso de Ciência da Computação',
-      technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
-      image: '/projetos/ccblog.webp',
-      github: 'https://github.com/debs-veras/ccblog',
-      link: 'https://ccblog-zeta.vercel.app/',
-    },
-    {
       title: 'Git Humilha',
-      description:
-        'Git Humilha é uma aplicação React que analisa perfis públicos do GitHub e gera um roast técnico sobre os repositórios, linguagens, estrelas, forks, projetos arquivados e sinais de atividade.',
+      description: 'Git Humilha é uma aplicação React que analisa perfis públicos do GitHub e gera um roast técnico sobre os repositórios, linguagens, estrelas, forks, projetos arquivados e sinais de atividade.',
       technologies: ['React/TypeScript', 'Tailwind', ],
       image: '/projetos/githumilha.webp',
       github: 'https://github.com/debs-veras/git-humilha',
       link: 'https://git-humilha.vercel.app/',
     },
-
     {
       title: 'Seleção Coded',
-      description:
-        'O Coded é uma plataforma robusta de gestão acadêmica projetada para simplificar a organização de atividades escolares.',
+      description: 'O Coded é uma plataforma robusta de gestão acadêmica projetada para simplificar a organização de atividades escolares.',
       technologies: ['React/TypeScript', 'Tailwind', 'Python', 'Docker'],
       image: '/projetos/coded.webp',
       github: 'https://github.com/debs-veras/coded',
     },
     {
       title: 'Quiz Naruto',
-      description:
-        'Um quiz interativo com a temática do anime Naruto. Este projeto foi desenvolvido para testar os conhecimentos dos fãs do universo ninja, apresentando perguntas dinâmicas e gerenciamento de estado avançado.',
+      description: 'Um quiz interativo com a temática do anime Naruto. Este projeto foi desenvolvido para testar os conhecimentos dos fãs do universo ninja, apresentando perguntas dinâmicas e gerenciamento de estado avançado.',
       technologies: ['React/TypeScript', 'Tailwind'],
       image: '/projetos/quiz-naruto.webp',
       github: 'https://github.com/debs-veras/quiz-naruto-fe',
       link: 'https://quiz-naruto-fe.vercel.app',
     },
     {
-      title: 'BlogTech',
-      description:
-        'Este é o frontend do BlogTech, uma plataforma de blog moderna e performática desenvolvida para oferecer a melhor experiência na criação e leitura de conteúdos tecnológicos.(Acesso estão no readme/documentação do projeto)',
-      technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
-      image: '/projetos/blog-tech.webp',
-      github: 'https://github.com/debs-veras/blogtech-fe',
-    },
-    {
       title: 'Portfólio ',
-      description:
-        'Este projeto consiste em uma landing page de página única (SPA) com navegação por âncoras, construída para servir como portfólio pessoal e também como base reutilizável para páginas institucionais.',
+      description: 'Este projeto consiste em uma landing page de página única (SPA) com navegação por âncoras, construída para servir como portfólio pessoal e também como base reutilizável para páginas institucionais.',
       technologies: ['React', 'Typescript', 'Tailwind'],
       image: '/projetos/portfolio.webp',
       github: 'https://github.com/debs-veras/landing-page',
     },
     {
-      title: 'Sinal Verde',
-      description:
-        'Site imobiliário moderno desenvolvido para a Sinal Verde Negócios Imobiliários. Design responsivo, animações com Framer Motion e catálogo de imóveis dinâmico.',
-      technologies: ['React/TypeScript', 'Tailwind'],
-      image: '/projetos/sinal-verde.webp',
-      link: 'https://sinal-verde-site.vercel.app/',
-    },
-    {
-      title: 'AltusBranding ',
-      description:
-        'Landing page institucional para AltusBranding, focada em branding estratégico, design e experiência digital.',
-      technologies: ['React', 'Typescript', 'Tailwind'],
-      image: '/projetos/altusbranding.webp',
-      github: 'https://github.com/debs-veras/altusbranding',
-      link: 'https://altusbranding.vercel.app',
-    },
-    {
       title: 'Pokedex com Api',
-      description:
-        'Um componente interativo em React que exibe detalhes completos de um Pokémon em um modal animado, consumindo dados em tempo real da PokéAPI. Uma Pokédex interativa desenvolvida para fins de aprendizado',
+      description: 'Um componente interativo em React que exibe detalhes completos de um Pokémon em um modal animado, consumindo dados em tempo real da PokéAPI. Uma Pokédex interativa desenvolvida para fins de aprendizado',
       technologies: ['React', 'Typescript', 'Tailwind'],
       image: '/projetos/pokedex.webp',
       link: 'https://pokedex-orpin-chi-52.vercel.app/',
@@ -121,8 +109,7 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'Seleção Box3',
-      description:
-        'Este projeto foi desenvolvido como parte do processo seletivo técnico de uma empresa, com o objetivo de demonstrar habilidades em desenvolvimento frontend, organização de código, regras de negócio, integração com API e experiência do usuário.',
+      description: 'Este projeto foi desenvolvido como parte do processo seletivo técnico de uma empresa, com o objetivo de demonstrar habilidades em desenvolvimento frontend, organização de código, regras de negócio, integração com API e experiência do usuário.',
       technologies: ['React/JavaScript', 'Tailwind'],
       image: '/projetos/selecao-box3.webp',
       github: 'https://github.com/debs-veras/react-selecao-box3',
@@ -130,25 +117,15 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'Memory Game',
-      description:
-        'Jogo da Memória desenvolvido com HTML, CSS e JavaScript. O projeto começou a partir de um estudo de um jogo base apresentado em um vídeo do YouTube, mas foi fortemente expandido e refatorado, recebendo novas funcionalidades e modos de jogo adicionais.',
+      description: 'Jogo da Memória desenvolvido com HTML, CSS e JavaScript. O projeto começou a partir de um estudo de um jogo base apresentado em um vídeo do YouTube, mas foi fortemente expandido e refatorado, recebendo novas funcionalidades e modos de jogo adicionais.',
       technologies: ['JavaScript', 'CSS', 'HTML'],
       image: '/projetos/memory-game.webp',
       github: 'https://github.com/debs-veras/memory-game',
       link: 'https://memory-game-debs.vercel.app',
     },
     {
-      title: 'BoxChat',
-      description:
-        'Este projeto é um sistema de chat em tempo real que permite conversas entre usuários conectados. Foi desenvolvido usando React para o frontend e Socket.IO com Node.js para o backend.',
-      technologies: ['TypeScript', 'React', 'Tailwind'],
-      image: '/projetos/box-chat.webp',
-      github: 'https://github.com/debs-veras/box_chat',
-    },
-    {
       title: 'Clone Netflix',
-      description:
-        'Uma réplica visual da página de entrada (landing page) da Netflix, focada em design responsivo, performance e experiência do usuário premium.',
+      description: 'Uma réplica visual da página de entrada (landing page) da Netflix, focada em design responsivo, performance e experiência do usuário premium.',
       technologies: ['JavaScript', 'CSS', 'HTML'],
       image: '/projetos/clone-netflix.webp',
       github: 'https://github.com/debs-veras/clone-netflix',
@@ -156,32 +133,28 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'AltusAerial',
-      description:
-        'Site institucional desenvolvido para a AltusAerial, focado na apresentação de serviços, identidade visual moderna e navegação responsiva.',
+      description: 'Site institucional desenvolvido para a AltusAerial, focado na apresentação de serviços, identidade visual moderna e navegação responsiva.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       image: '/projetos/altus-aerial.webp',
       link: 'https://altusaerial.com.br/',
     },
     {
       title: 'When & Weather',
-      description:
-        'Aplicação web desenvolvida durante o NASA International Space Apps Challenge 2025. O projeto auxilia no planejamento de eventos mais seguros ao permitir a consulta de condições climáticas',
+      description: 'Aplicação web desenvolvida durante o NASA International Space Apps Challenge 2025. O projeto auxilia no planejamento de eventos mais seguros ao permitir a consulta de condições climáticas',
       technologies: ['React', 'TypeScript', 'CSS'],
       image: '/projetos/when-and-weather.webp',
       github: 'https://github.com/CodeStormNinja/when-and-weather',
     },
     {
       title: 'Site Educação Popular',
-      description:
-        'Este é um projeto digital que visa promover, divulgar e fortalecer práticas de Educação Popular em Saúde, alinhadas à participação social e às políticas públicas de base comunitária.',
+      description: 'Este é um projeto digital que visa promover, divulgar e fortalecer práticas de Educação Popular em Saúde, alinhadas à participação social e às políticas públicas de base comunitária.',
       technologies: ['PHP', 'Bootstrap', 'CSS', 'HTML'],
       image: '/projetos/educacao-popular.webp',
       github: 'https://github.com/debs-veras/site-educacao-popular',
     },
     {
       title: 'Jogo Pedra, Papel e Tesoura',
-      description:
-        'Este é um projeto simples de um jogo Pedra, Papel e Tesoura desenvolvido com HTML, CSS e JavaScript.',
+      description: 'Este é um projeto simples de um jogo Pedra, Papel e Tesoura desenvolvido com HTML, CSS e JavaScript.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       image: '/projetos/pedra-papel-tesoura.webp',
       link: 'https://jogo-pedra-papel-tesoura-debs.vercel.app',
