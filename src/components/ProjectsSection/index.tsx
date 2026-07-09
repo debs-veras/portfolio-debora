@@ -167,18 +167,15 @@ const PROJECTS: Record<Category, Project[]> = {
       description:
         'Atividades e implementações realizada na disciplina de estrutura de dados',
       technologies: [],
-      image:
-        'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80',
       link: null,
       github: 'https://github.com/debs-veras/estrutura-de-dados',
     },
     {
       title: 'Programação Orientada a Objetos',
-      description:
-        'Atividades e implementações realizada na disciplina de programação orientada a objetos (POO)',
+      description: 'Atividades e implementações realizada na disciplina de programação orientada a objetos (POO)',
       technologies: [],
-      image:
-        'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
       link: null,
       github: 'https://github.com/debs-veras/programacao-orientada-objeto',
     },
@@ -236,18 +233,24 @@ const PROJECTS: Record<Category, Project[]> = {
   cursos: [
     {
       title: 'Pokedex Map Dev Week',
-      description:
-        'Uma Pokédex interativa desenvolvida para fins de aprendizado, exibindo informações de Pokémon de forma visual e organizada.',
+      description: 'Uma Pokédex interativa desenvolvida para fins de aprendizado, exibindo informações de Pokémon de forma visual e organizada.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
       image: '/projetos/mapadev.webp',
       link: 'https://pokedex-mapadev-debs.vercel.app',
       github: 'https://github.com/debs-veras/pokedex-mapadev',
     },
+    {
+      title: 'Advice Generator',
+      description: 'Esta é uma solução para o desafio do aplicativo gerador de conselhos no Frontend Mentor.',
+      technologies: ['HTML', 'JavaScript', 'CSS'],
+      image: '/projetos/advice.webp',
+      link: 'https://advice-generator-app-main-debs.vercel.app',
+      github: 'https://github.com/debs-veras/advice-generator-app-main',
+    },
 
     {
       title: 'Efeito Parallax',
-      description:
-        'Este projeto demonstra o efeito parallax utilizando imagens em uma página web.',
+      description: 'Este projeto demonstra o efeito parallax utilizando imagens em uma página web.',
       technologies: ['HTML', 'CSS'],
       image: '/projetos/parallax.webp',
       link: 'https://parallax-debs.vercel.app',
@@ -255,8 +258,7 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'Site de Notícia',
-      description:
-        'Projeto de estudo de um site de notícias simulado com layout de portal informativo.',
+      description: 'Projeto de estudo de um site de notícias simulado com layout de portal informativo.',
       technologies: ['HTML', 'CSS'],
       image: '/projetos/blog-noticia.webp',
       link: 'https://blog-noticia-debs.vercel.app',
@@ -264,24 +266,21 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'App Lista Tarefas',
-      description:
-        'Uma aplicação web simples e funcional para gerenciamento de tarefas (To-Do List), desenvolvida em PHP com arquitetura MVC (Model-View-Controller) e integração com banco de dados MySQL.',
+      description: 'Uma aplicação web simples e funcional para gerenciamento de tarefas (To-Do List), desenvolvida em PHP com arquitetura MVC (Model-View-Controller) e integração com banco de dados MySQL.',
       technologies: ['PHP', 'HTML', 'JavaScript', 'CSS'],
       image: '/projetos/app-lista-tarefas.webp',
       github: 'https://github.com/debs-veras/app_lista_tarefas',
     },
     {
       title: 'App Help Desk',
-      description:
-        'App Help Desk é uma aplicação simples em PHP para gerenciamento de chamados (help desk), construída para fins didáticos. Permite que usuários registrem, visualizem e gerenciem solicitações de suporte técnico.(Credenciais para login estão no README do projeto).',
+      description: 'App Help Desk é uma aplicação simples em PHP para gerenciamento de chamados (help desk), construída para fins didáticos. Permite que usuários registrem, visualizem e gerenciem solicitações de suporte técnico.(Credenciais para login estão no README do projeto).',
       technologies: ['HTML', 'JavaScript', 'CSS', 'Bootstrap', 'PHP'],
       image: '/projetos/app-desk.webp',
       github: 'https://github.com/debs-veras/app_help_desk.git',
     },
     {
       title: 'Pokedex Completa',
-      description:
-        'Esse repositório contém a Pokédex completa que foi construída durante um tutorial no YouTube pelo canal Manual do Dev, usando as linguagens de front‑end HTML, CSS e JavaScript para criar uma aplicação interativa que lista Pokémons e mostra detalhes sobre eles.',
+      description: 'Esse repositório contém a Pokédex completa que foi construída durante um tutorial no YouTube pelo canal Manual do Dev, usando as linguagens de front‑end HTML, CSS e JavaScript para criar uma aplicação interativa que lista Pokémons e mostra detalhes sobre eles.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
       image: '/projetos/pokedex-completa.webp',
       link: 'https://pokedex-completo-debs.vercel.app',
@@ -289,8 +288,7 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'Mata Mosquito',
-      description:
-        'Um jogo simples e divertido onde o objetivo é matar os mosquitos que aparecem na tela dentro de um certo tempo. O jogo possui múltiplos níveis de dificuldade e aumenta a velocidade conforme você progride.',
+      description: 'Um jogo simples e divertido onde o objetivo é matar os mosquitos que aparecem na tela dentro de um certo tempo. O jogo possui múltiplos níveis de dificuldade e aumenta a velocidade conforme você progride.',
       technologies: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
       image: '/projetos/mata-mosquito.webp',
       link: 'https://game-mata-mosquito-debs.vercel.app',
@@ -298,8 +296,7 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'Museu Nacional',
-      description:
-        'Site fictício do Museu Nacional, desenvolvido exclusivamente para fins educacionais. O objetivo é praticar conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript.',
+      description: 'Site fictício do Museu Nacional, desenvolvido exclusivamente para fins educacionais. O objetivo é praticar conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript.',
       technologies: ['HTML', 'CSS'],
       image: '/projetos/museu-nacional.webp',
       link: 'https://site-museu-debs.vercel.app',
@@ -307,8 +304,7 @@ const PROJECTS: Record<Category, Project[]> = {
     },
     {
       title: 'Organo',
-      description:
-        'Organo é uma aplicação web desenvolvida com fins educativos, que permite organizar pessoas e times de forma visual e intuitiva.',
+      description: 'Organo é uma aplicação web desenvolvida com fins educativos, que permite organizar pessoas e times de forma visual e intuitiva.',
       technologies: ['HTML', 'CSS', 'React'],
       image: '/projetos/organo.webp',
       link: 'https://organo-sage-omega.vercel.app/',
