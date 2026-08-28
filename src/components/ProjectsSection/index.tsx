@@ -24,6 +24,13 @@ type Category = 'web' | 'academico' | 'cursos';
 const PROJECTS: Record<Category, Project[]> = {
   web: [
     {
+      title: 'Stock Control',
+      description: 'Sistema completo para controle de estoque e gestão de inventário, contando com interface moderna, dashboard analítico e back-end robusto.',
+      technologies: ['React/TypeScript', 'Tailwind', 'Node.js', 'Prisma', 'PostgreSQL'],
+      image: '/projetos/stock-control.png',
+      link: 'https://stock-control-fe.vercel.app/login',
+    },
+    {
       title: 'CCBlog',
       description:'O CCBlog é uma plataforma web desenvolvida para centralizar informações, notícias e gestão acadêmica do curso de Ciência da Computação',
       technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
@@ -433,7 +440,7 @@ export default function ProjectsSection() {
                 >
                   {/* Imagem Container */}
                   <div className="aspect-video overflow-hidden relative border-b border-black/10 dark:border-white/10 shrink-0">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={project.image}
                       alt={project.title}
@@ -446,7 +453,7 @@ export default function ProjectsSection() {
                     />
 
                     {/* Overlay Ações (Hover) */}
-                    <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-4 translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-300">
                       {project.link && (
                         <a
                           href={project.link}
