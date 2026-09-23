@@ -43,7 +43,7 @@ const PROJECTS: Record<Category, Project[]> = {
       description: 'Site imobiliário moderno desenvolvido para a Sinal Verde Negócios Imobiliários. Design responsivo, animações com Framer Motion e catálogo de imóveis dinâmico.',
       technologies: ['React/TypeScript', 'Tailwind'],
       image: '/projetos/sinal-verde.webp',
-      link: 'https://sinal-verde-site.vercel.app/',
+      link: 'https://imobsinalverde.com',
     },
     {
       title: 'AltusBranding ',
