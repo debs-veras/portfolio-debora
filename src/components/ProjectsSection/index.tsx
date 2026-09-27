@@ -31,6 +31,13 @@ const PROJECTS: Record<Category, Project[]> = {
       link: 'https://stock-control-fe.vercel.app/login',
     },
     {
+      title: 'Controle de Obras',
+      description: 'Plataforma de gestão de obras com orçamento, pedidos de materiais, folha de pagamento, equipe, pagamentos e galeria de fotos da evolução de cada obra.',
+      technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Prisma', 'PostgreSQL'],
+      image: '/projetos/works-control.webp',
+      link: 'https://obras-controle.vercel.app/',
+    },
+    {
       title: 'CCBlog',
       description:'O CCBlog é uma plataforma web desenvolvida para centralizar informações, notícias e gestão acadêmica do curso de Ciência da Computação',
       technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
