@@ -38,6 +38,13 @@ const PROJECTS: Record<Category, Project[]> = {
       link: 'https://obras-controle.vercel.app/',
     },
     {
+      title: 'Controle de Agendamento',
+      description: 'Sistema de agendamento online para barbearias, com link público de reserva, horários de funcionamento configuráveis, duração por serviço, confirmação e cancelamento por e-mail e agenda do dia.',
+      technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Prisma', 'PostgreSQL'],
+      image: '/projetos/controle-agendamento.webp',
+      link: 'https://controle-agendamento-fe.vercel.app/',
+    },
+    {
       title: 'CCBlog',
       description:'O CCBlog é uma plataforma web desenvolvida para centralizar informações, notícias e gestão acadêmica do curso de Ciência da Computação',
       technologies: ['React/TypeScript', 'Tailwind', 'Node/Express', 'Docker'],
