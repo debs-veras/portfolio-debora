@@ -27,7 +27,7 @@ const PROJECTS: Record<Category, Project[]> = {
       title: 'Stock Control',
       description: 'Sistema completo para controle de estoque e gestão de inventário, contando com interface moderna, dashboard analítico e back-end robusto.',
       technologies: ['React/TypeScript', 'Tailwind', 'Node.js', 'Prisma', 'PostgreSQL'],
-      image: '/projetos/stock-control.png',
+      image: '/projetos/stock-control.webp',
       link: 'https://stock-control-fe.vercel.app/login',
     },
     {
